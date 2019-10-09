@@ -1,0 +1,41 @@
+ıd = input("Kullanıcı Adı Giriniz: ")
+
+pw = input("Şifrenizi Giriniz: ")
+
+captcha = input("captcha giriniz: ")
+
+
+
+if ıd == "shakespeare0" and pw == "meverdi31" and captcha == "177431":
+    print("Hoşgeldin Sahip")
+
+
+
+elif ıd == "shakespeare0" and pw == "meverdi31" and captcha != "177431":
+    print("Captcha Hatalı!!!")
+
+elif ıd != "shakespeare0" and pw == "meverdi31" and captcha == "177431":
+    print("Kullanıcı Adı Hatalı")
+
+elif ıd == "shakespeare0" and pw != "meverdi" and captcha == "177431":
+    print("Parola Hatalı")
+
+
+
+elif ıd != "shakespeare0" and pw !=  "meverdi31" and captcha == "177431":
+    print("Kullanıcı Adı ve Parola Hatalı!!!")
+
+
+elif ıd != "shakespeare0" and pw == "meverdi31" and captcha != "177431":
+    print("Kullanıcı Adı ve Captcha Hatalı!!!")
+
+elif ıd == "shakespeare0" and pw != "meverdi31" and captcha != "177431":
+    print("Parola ve Captcha Hatalı!!!")
+
+
+
+else:
+    print("Sisteme kayıtlı böyle bir kombinasyon yoktur!!!")
+"""
+Ertuğrul Gazi Özdemir Tarafından Yazılmıştır...
+"""

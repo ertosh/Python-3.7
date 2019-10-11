@@ -1,0 +1,40 @@
+Adı = input("Adınız: ")
+
+Soyadı = input("Soyadınız: ")
+
+Üniversite = input("Okul: ")
+
+Fakülte = input("Fakülte: ")
+
+Bölüm = input("Bölüm: ")
+
+Sınıf = int(input("Dereceniz: "))
+
+Numara = int(input("Okul Nuumaranız: "))
+
+print("Veri Tabanına Kaydediliyor...")
+
+print("Kayıt İşleminde Onayınız İstenecek")
+
+İlerleme = input("ilerlemek için evet yazınız: ")
+
+if İlerleme == "Evet":
+
+    print("Adı: ",Adı)
+
+    print("Soyadı: ", Soyadı)
+
+    print("Okul: ",Üniversite)
+
+    print("Fakülte: ", Fakülte)
+
+    print("Bölüm", Bölüm)
+
+    print("Sınıf: ",Sınıf)
+
+    print("Numara: ",Numara)
+
+
+"""
+Ertuğrul Gazi ÖZDEMİR Tarafından Yazılmıştır
+"""

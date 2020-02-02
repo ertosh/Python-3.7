@@ -1,0 +1,42 @@
+şekil = input("dörtgen mi üçgen mi?: ")
+
+if şekil == "dörtgen":
+    print("dörtgeninizin kenar uzunluklarını giriniz:")
+
+    kenar_1 = int(input("1.kenar: "))
+    kenar_2 = int(input("2.kenar: "))
+    kenar_3 = int(input("3.kenar: "))
+    kenar_4 = int(input("4.kenar: "))
+
+    if (kenar_1 == kenar_2 == kenar_3 == kenar_4):
+        print("seçtiğiniz dörtgen bir karedir.")
+
+    elif (kenar_1 == kenar_3 and kenar_2 == kenar_4 and kenar_4 != kenar_3):
+        print("seçtiğiniz dörtgen bir dikdörtgendir.")
+
+    else:
+        print("seçtiğiniz dörtgen sıradan bir dörtgen.")
+
+elif şekil == "üçgen":
+    print("üç tane kenar uzunluğu girin")
+
+    a = int(input("1.kenar: "))
+    b = int(input("2.kenar: "))
+    c = int(input("3.kenar: "))
+
+    if ( abs(a + b ) > c and abs(a + c) > b and abs(b + c) > a ):
+
+        if (a == b and a == c):
+            print("eşkenar üçgen...")
+
+        elif (a == b and a != c ):
+            print("ikizkenar üçgen...")
+
+        else:
+            print("çeşitkenar üçgen...")
+
+    else:
+        print("üçgen belirtmiyor")
+
+else:
+    print("geçerli bir şekil girmediniz...")
